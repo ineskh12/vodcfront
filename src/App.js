@@ -40,7 +40,7 @@ function App() {
   <BrowserRouter>
     <div className="App">
 
-    <Navbar  style={{height: '90px'}}   className=" auth-wrapper navbarcolor" variant="dark">
+    <Navbar  style={{width: '1800px',height: '90px'}}   className="navbarcolor" variant="dark">
     <div >
       <Navbar.Brand href="#home">
         <div  style = {{ marginLeft: '14.9rem' }}  className="row">
