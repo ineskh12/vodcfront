@@ -1,0 +1,16 @@
+<svg id="fav" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ff7900;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_81" data-name="Rectangle 81" class="cls-1" width="24" height="24"/>
+  <path id="star_favourite_19371" class="cls-2" d="M74,101.3,79.3,106l-1.765,7.062L84,109.535l6.473,3.531L88.712,106l5.3-4.708-7.062-1.177L84,94l-2.942,6.12Z" transform="translate(-72 -92.025)"/>
+</svg>

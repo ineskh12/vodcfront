@@ -1,0 +1,16 @@
+<svg id="delete" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_81" data-name="Rectangle 81" class="cls-1" width="24" height="24"/>
+  <path id="Delete-2" data-name="Delete" class="cls-2" d="M19.662,16.263a1.2,1.2,0,0,1,0,1.7l-1.7,1.7a1.2,1.2,0,0,1-1.7,0l-4.249-4.249L7.765,19.662a1.2,1.2,0,0,1-1.7,0l-1.7-1.7a1.2,1.2,0,0,1,0-1.7l4.249-4.249L4.365,7.765a1.2,1.2,0,0,1,0-1.7l1.7-1.7a1.2,1.2,0,0,1,1.7,0l4.249,4.249,4.249-4.249a1.2,1.2,0,0,1,1.7,0l1.7,1.7a1.2,1.2,0,0,1,0,1.7l-4.249,4.249Z" transform="translate(-0.014 0.448)"/>
+</svg>
