@@ -40,7 +40,7 @@ function App() {
   <BrowserRouter>
     <div className="App">
 
-    <Navbar  style={{width: '1800px',height: '90px'}}   className="navbarcolor" variant="dark">
+    <Navbar  style={{width: 'auto',height: '90px'}}   className="navbarcolor " variant="dark">
     <div >
       <Navbar.Brand href="#home">
         <div  style = {{ marginLeft: '14.9rem' }}  className="row">
@@ -62,7 +62,7 @@ function App() {
                     
     {localStorage.Login && (
       <>
-      <Link  to="/setup" style={{color:clr, cursor : 'pointer', fontFamily:'HelveticaNeue-Bold' ,fontSize:'19px' ,marginTop:"46px",marginLeft:"270px"
+      <Link  to="/setup" style={{color:clr, cursor : 'pointer', fontFamily:'HelveticaNeue-Bold' ,fontSize:'19px' ,marginTop:"46px",marginLeft:"70px"
 }} onClick={() => 
   setcolor(0)
 } >Setup </Link>
@@ -129,9 +129,9 @@ function App() {
           <hr style={{border:"2px solid #FF7900" ,width:"19px",marginLeft:"-110px",marginTop:"60px"}}></hr>
           {localStorage.Login && (
       <>
-      <hr style={{border:"2px solid" ,color:clr,width:"60px",marginLeft:"-1190px",marginTop:"60px"}}></hr>
+      {/* <hr style={{border:"2px solid" ,color:clr,width:"60px",marginLeft:"-887px",marginTop:"60px"}}></hr> */}
 
-          <hr style={{border:"2px solid ",color:clr1 ,width:"60px",marginRight:"470px",marginLeft:"-500px",marginTop:"60px"}}></hr> &nbsp;&nbsp;&nbsp;
+          {/* <hr style={{border:"2px solid ",color:clr1 ,width:"60px",marginRight:"470px",marginLeft:"-500px",marginTop:"60px"}}></hr> &nbsp;&nbsp;&nbsp; */}
 
               </>
           )} 
