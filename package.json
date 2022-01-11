@@ -1,55 +1,58 @@
 {
     "homepage": ".",
-  "name": "react-login-signup-ui-template",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "antd": "^4.16.13",
-    "axios": "^0.24.0",
-    "bootstrap": "^4.3.1",
-    "font-awesome": "^4.7.0",
-    "history": "^5.0.1",
-    "react": "^16.9.0",
-    "react-bootstrap": "^1.6.1",
-    "react-data-table-component": "4.0.1",
-    "react-dom": "^16.9.0",
-    "react-dropzone": "10.2.1",
-    "react-flippy": "0.1.5",
-    "react-horizontal-scrolling-menu": "0.7.6",
-    "react-router-dom": "^5.2.1",
-    "react-scripts": "3.1.2",
-    "react-unity-webgl": "^8.5.2",
-    "styled-components": "4.4.1"
-  },
-  "scripts": {
-    
-    "start": "react-scripts start",
-    "build": "CI=false && react-scripts build", 
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3"
-  }
+    "name": "react-login-signup-ui-template",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.36",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
+        "@fortawesome/react-fontawesome": "^0.1.16",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/icons": "^4.11.2",
+        "@material-ui/lab": "^4.0.0-alpha.60",
+        "antd": "^4.16.13",
+        "axios": "^0.24.0",
+        "bootstrap": "^4.3.1",
+        "font-awesome": "^4.7.0",
+        "history": "^5.0.1",
+        "muicss": "^0.9.41",
+        "react": "^16.9.0",
+        "react-alert": "^7.0.3",
+        "react-alert-template-basic": "^1.0.2",
+        "react-bootstrap": "^1.6.1",
+        "react-data-table-component": "4.0.1",
+        "react-dom": "^16.9.0",
+        "react-dropzone": "10.2.1",
+        "react-flippy": "0.1.5",
+        "react-horizontal-scrolling-menu": "0.7.6",
+        "react-router-dom": "^5.2.1",
+        "react-scripts": "3.1.2",
+        "react-unity-webgl": "^8.5.2",
+        "styled-components": "4.4.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "CI=false && react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
+    }
 }

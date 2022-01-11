@@ -174,11 +174,11 @@ function SimpleTable(props) {
          onChange={handleChange}
         >
           
-          <MenuItem style={{color:'black',fontWeight:'bold '}} value={10}>All</MenuItem>
-          <MenuItem  style={{color:'black',fontWeight:'bold '}} value={20}>New</MenuItem>
-          <MenuItem   style={{color:'black',fontWeight:'bold '}} value={20}>Favorites</MenuItem>
-          <MenuItem  style={{color:'black',fontWeight:'bold '}} value={30}>Questions</MenuItem>
-          <MenuItem style={{color:'black',fontWeight:'bold '}} value={30}>Deleted</MenuItem>
+          <MenuItem style={{color:'black',fontWeight:'bold '}} value={1}>All</MenuItem>
+          <MenuItem  style={{color:'black',fontWeight:'bold '}} value={2}>New</MenuItem>
+          <MenuItem   style={{color:'black',fontWeight:'bold '}} value={3}>Favorites</MenuItem>
+          <MenuItem  style={{color:'black',fontWeight:'bold '}} value={4}>Questions</MenuItem>
+          <MenuItem style={{color:'black',fontWeight:'bold '}} value={5}>Deleted</MenuItem>
         </Select>
       </FormControl>
     </Box>   

@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import Select from '@material-ui/core/Select';
 import Modal from '@material-ui/core/Modal';
-import Typography from '@material-ui/core/Typography';
+
 import Button from '@material-ui/core/Button';
 import MenuItem from '@material-ui/core/MenuItem';
 import Box from '@material-ui/core/Box';
@@ -17,16 +17,13 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+
 import UnfoldMoreIcon from '@material-ui/icons/UnfoldMore';
 import './table.css'
 import GradeIcon from '@material-ui/icons/Grade';
-import ClearOutlinedIcon from '@material-ui/icons/ClearOutlined';
+
 import Paper from '@material-ui/core/Paper';
-import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import axios from 'axios';
 const styles = theme => ({
   
@@ -53,19 +50,8 @@ const styles = theme => ({
 
 });
 
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-  id += 1;
-  return { id, name, calories, fat, carbs, protein };
-}
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
+
 
 function SimpleTable(props) {
   const { classes } = props;
