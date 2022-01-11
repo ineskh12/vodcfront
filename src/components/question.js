@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
-import CloseIcon from '@material-ui/icons/Close';
-import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
+
 import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import Select from '@material-ui/core/Select';
-import Dialog from '@material-ui/core/Dialog';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import Button from '@material-ui/core/Button';
+
 import MenuItem from '@material-ui/core/MenuItem';
 import Box from '@material-ui/core/Box';
 import FormControl from '@material-ui/core/FormControl';
@@ -19,13 +15,8 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableSortLabel from '@material-ui/core/TableSortLabel';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import { Close } from '@material-ui/icons';
-import './table.css'
-import DialogActions from '@material-ui/core/DialogActions';
 
-import Paper from '@material-ui/core/Paper';
+import './table.css'
 
 
 import axios from 'axios';
@@ -34,6 +25,7 @@ import logo from '../img/order.svg';
 import fav from '../img/fav.svg';
 import close from '../img/delete.svg';
 import question from '../img/question.svg';
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, Modal } from '@material-ui/core';
 const styles = theme => ({
   
   
@@ -56,6 +48,11 @@ const styles = theme => ({
   arrowDropUp:{
       color:'#000000'
   },
+  dialog:{
+    borderRadius: "40px ",
+    backgroundColor:'red'
+ 
+  }
 
 });
 
@@ -102,8 +99,8 @@ function SimpleTable(props) {
   }, []);
 
   return (
-    <Paper className={classes.root}>
-      <TableContainer component={Paper} >
+   <div>
+      <TableContainer className={classes.root} >
 
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
@@ -233,23 +230,20 @@ function SimpleTable(props) {
         </Table>
       </TableContainer>
   
-
-
-
-
-  <Dialog
+      <Dialog
+ PaperProps={{
+    style: { borderRadius: 1 ,   minWidth: '80vh',}   }}
         open={open}
         onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
+  
       >
         {/* <DialogTitle id="alert-dialog-title">
           {"Use Google's location service?"}
         </DialogTitle> */}
        
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description" >
-          <div class="container">
+        <DialogContent      >
+          <DialogContentText    >
+          <div class="container" >
   <div class="row">
     <div class="col-sm">
     <h6 style={{color:"#FF7900"}}>Session N°9324 </h6>
@@ -292,7 +286,7 @@ function SimpleTable(props) {
 </div>
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
+        <DialogActions   >
         
           <Button onClick={handleClose}>Disagree</Button>
           <Button onClick={handleClose} autoFocus>
@@ -302,7 +296,9 @@ function SimpleTable(props) {
       </Dialog>
 
       
-    </Paper>
+      
+
+</div>
 
   );
 }
